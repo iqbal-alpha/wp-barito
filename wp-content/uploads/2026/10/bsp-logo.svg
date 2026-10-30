@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 50" width="300" height="50" fill="none">
+  <defs>
+    <linearGradient id="bspLeafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="bspSunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Eco Palm Emblem (Dead-Center Aligned) -->
+  <g transform="translate(4, 0)">
+    <!-- Sun / Seed Core -->
+    <circle cx="22" cy="14" r="5.5" fill="url(#bspSunGrad)" />
+    
+    <!-- Stylized Palm Fronds -->
+    <path d="M22 42 V 19" stroke="#34D399" stroke-width="2.4" stroke-linecap="round" />
+    <path d="M22 30 C 15 27 11 21 10 15 C 15 15 20 18 22 22" fill="url(#bspLeafGrad)" opacity="0.95" />
+    <path d="M22 30 C 29 27 33 21 34 15 C 29 15 24 18 22 22" fill="url(#bspLeafGrad)" opacity="0.95" />
+    <path d="M22 36 C 14 33 9 29 8 23 C 14 22 19 26 22 30" fill="url(#bspLeafGrad)" opacity="0.8" />
+    <path d="M22 36 C 30 33 35 29 36 23 C 30 22 25 26 22 30" fill="url(#bspLeafGrad)" opacity="0.8" />
+  </g>
+
+  <!-- Wordmark Light Version (Dead-Center Aligned) -->
+  <g transform="translate(52, 23)">
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" letter-spacing="0.8" fill="#FFFFFF">BORNEO SAWIT <tspan fill="#34D399">PERKASA</tspan></text>
+    <text x="0" y="14.5" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="8.5" font-weight="600" letter-spacing="1.8" fill="#94A3B8">SUSTAINABLE AGRIBUSINESS • INDONESIA</text>
+  </g>
+</svg>

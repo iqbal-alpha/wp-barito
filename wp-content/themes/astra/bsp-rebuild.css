@@ -1,0 +1,793 @@
+/* ==========================================================================
+   PT BORNEO SAWIT PERKASA - FINAL POLISHED STYLESHEET (V3)
+   1. Unified, cohesive Varieties Header (No detached/nyasar text)
+   2. Creative Asymmetric Bento Architecture for Agronomy Guides
+   3. Crisp Vector Logo & Pure Inline Emblem
+   4. Immersive Full-Height Hero
+   5. Clean Footer (No Watermark)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --bsp-font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --bsp-lime: #D4F67E;
+  --bsp-lime-hover: #BEF264;
+  --bsp-emerald: #10B981;
+  --bsp-emerald-dark: #059669;
+  --bsp-emerald-deep: #047857;
+  --bsp-dark-forest: #081C13;
+  --bsp-dark-bg: #0C130F;
+  --bsp-dark-card: #131E18;
+  --bsp-dark-border: rgba(255, 255, 255, 0.08);
+  --bsp-dark-text-muted: #94A3B8;
+  --bsp-slate-heading: #0F172A;
+  --bsp-slate-body: #475569;
+  --bsp-slate-muted: #64748B;
+  --bsp-radius-sm: 8px;
+  --bsp-radius-md: 14px;
+  --bsp-radius-lg: 18px;
+  --bsp-radius-pill: 9999px;
+  --bsp-container-max: 1200px;
+}
+
+/* Base Wrapper Reset */
+.bsp-rebuild-wrap {
+  font-family: var(--bsp-font) !important;
+  color: var(--bsp-slate-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  width: 100%;
+}
+.bsp-rebuild-wrap * {
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   LOGO STYLES (CLEAN & MODERN - NO BACKGROUND)
+   ========================================================================== */
+.bsp-brand-logo-wrap,
+.bsp-footer-brand-logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  line-height: 1;
+  transition: opacity 0.15s ease;
+}
+.bsp-brand-logo-wrap:hover,
+.bsp-footer-brand-logo-wrap:hover {
+  opacity: 0.92;
+}
+.bsp-brand-logo-img {
+  height: 32px;
+  width: auto;
+  max-width: 200px;
+  display: block;
+  object-fit: contain;
+}
+.bsp-footer-brand-logo-wrap .bsp-brand-logo-img {
+  height: 38px;
+  max-width: 220px;
+}
+
+/* ==========================================================================
+   HERO SECTION (FULL HEIGHT & IMMERSIVE)
+   ========================================================================== */
+.bsp-hero-wrapper {
+  position: relative;
+  min-height: 96vh;
+  background: linear-gradient(180deg, rgba(6, 22, 15, 0.2) 0%, rgba(6, 22, 15, 0.48) 50%, rgba(4, 16, 10, 0.92) 100%),
+              url('/wp-content/uploads/2026/10/bsp_hero_canopy.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 24px 70px 24px;
+  color: #FFFFFF;
+}
+
+/* Floating Pill Navbar (Ultra-Slim Glassmorphic) */
+.bsp-floating-nav {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(8, 26, 17, 0.32);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--bsp-radius-pill);
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.22);
+}
+.bsp-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bsp-nav-link-item {
+  color: rgba(255, 255, 255, 0.92) !important;
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 500;
+  transition: color 0.15s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+.bsp-nav-link-item:hover {
+  color: var(--bsp-lime) !important;
+}
+.bsp-nav-auth {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.bsp-nav-auth-ghost {
+  color: #FFFFFF !important;
+  text-decoration: none;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--bsp-radius-pill);
+  transition: background 0.15s ease;
+}
+.bsp-nav-auth-ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.bsp-nav-auth-btn {
+  background: var(--bsp-lime);
+  color: #0A1F13 !important;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 6px 15px;
+  border-radius: var(--bsp-radius-pill);
+  text-decoration: none;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.bsp-nav-auth-btn:hover {
+  background: var(--bsp-lime-hover);
+  transform: translateY(-1px);
+}
+
+/* Hero Content (Positioned at bottom-left) */
+.bsp-hero-bottom {
+  max-width: var(--bsp-container-max);
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 100px;
+}
+.bsp-hero-title {
+  font-size: clamp(34px, 4vw, 52px) !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -1px !important;
+  color: #FFFFFF !important;
+  max-width: 700px;
+  margin: 0 0 16px 0 !important;
+}
+.bsp-hero-subtitle {
+  font-size: 17px !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  max-width: 560px;
+  line-height: 1.55 !important;
+  margin: 0 0 30px 0 !important;
+}
+.bsp-hero-cta-btn {
+  background: var(--bsp-lime);
+  color: #0A1F13 !important;
+  font-size: 14.5px;
+  font-weight: 700;
+  padding: 10px 14px 10px 22px;
+  border-radius: var(--bsp-radius-pill);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.15s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+.bsp-hero-cta-btn:hover {
+  background: var(--bsp-lime-hover);
+  transform: translateY(-2px);
+}
+.bsp-btn-arrow-dot {
+  width: 26px;
+  height: 26px;
+  background: #0A1F13;
+  color: var(--bsp-lime);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+/* ==========================================================================
+   SECTION 2: TRUST & SCALED IMPACT
+   ========================================================================== */
+.bsp-proof-section {
+  background: #FFFFFF;
+  padding: 100px 24px 80px 24px;
+}
+.bsp-proof-container {
+  max-width: var(--bsp-container-max);
+  margin: 0 auto;
+}
+.bsp-proof-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+.bsp-proof-top-title {
+  font-size: 38px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.8px !important;
+  color: var(--bsp-slate-heading) !important;
+  margin: 0 !important;
+  max-width: 500px;
+}
+.bsp-proof-top-desc {
+  font-size: 15.5px !important;
+  color: var(--bsp-slate-muted) !important;
+  line-height: 1.6 !important;
+  max-width: 460px;
+  margin: 0 !important;
+}
+.bsp-proof-grid {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 52px;
+  align-items: center;
+}
+.bsp-proof-photo-card {
+  border-radius: var(--bsp-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+.bsp-proof-photo-card img {
+  width: 100%;
+  height: 510px;
+  object-fit: cover;
+  display: block;
+}
+.bsp-stats-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.bsp-stat-item {
+  border-bottom: 1px solid #F1F5F9;
+  padding-bottom: 24px;
+}
+.bsp-stat-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.bsp-stat-block-num {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--bsp-slate-heading);
+  line-height: 1;
+  letter-spacing: -0.8px;
+  margin-bottom: 6px;
+}
+.bsp-stat-block-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--bsp-slate-heading);
+  margin-bottom: 4px;
+}
+.bsp-stat-block-desc {
+  font-size: 14px;
+  color: var(--bsp-slate-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+.bsp-stat-readmore {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--bsp-emerald-dark);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: all 0.15s ease;
+}
+.bsp-stat-readmore:hover {
+  color: var(--bsp-emerald-deep);
+  gap: 10px;
+}
+
+/* ==========================================================================
+   SECTION 3: SHOWCASE BANNER
+   ========================================================================== */
+.bsp-showcase-section {
+  background: #FFFFFF;
+  padding: 0 24px 100px 24px;
+}
+.bsp-showcase-container {
+  max-width: var(--bsp-container-max);
+  margin: 0 auto;
+}
+.bsp-showcase-card-banner {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 400px;
+  background: linear-gradient(90deg, rgba(8, 28, 19, 0.45) 0%, rgba(8, 28, 19, 0.85) 100%),
+              url('/wp-content/uploads/2026/10/bsp_estate_panoramic.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 48px 44px;
+  box-shadow: 0 14px 36px rgba(8, 28, 19, 0.12);
+}
+.bsp-showcase-insets {
+  display: flex;
+  gap: 14px;
+}
+.bsp-inset-thumb {
+  width: 110px;
+  height: 110px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.bsp-inset-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.bsp-showcase-text-block {
+  max-width: 480px;
+}
+.bsp-showcase-heading {
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  color: #FFFFFF !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.5px !important;
+  margin: 0 0 10px 0 !important;
+}
+.bsp-showcase-paragraph {
+  font-size: 15px !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  line-height: 1.55 !important;
+  margin: 0 0 20px 0 !important;
+}
+.bsp-showcase-nav-pills {
+  display: flex;
+  gap: 10px;
+}
+.bsp-pill-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.15s ease;
+}
+.bsp-pill-btn.active, .bsp-pill-btn:hover {
+  background: var(--bsp-lime);
+  color: #0A1F13;
+  border-color: var(--bsp-lime);
+}
+
+/* ==========================================================================
+   SECTION 4: DARK VARIETIES GRID (ELEGANT SPLIT HEADER)
+   ========================================================================== */
+.bsp-dark-varieties-section {
+  background: var(--bsp-dark-bg);
+  padding: 100px 24px;
+  color: #FFFFFF;
+}
+.bsp-varieties-wrap {
+  max-width: var(--bsp-container-max);
+  margin: 0 auto;
+}
+.bsp-varieties-top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+.bsp-varieties-title-block {
+  max-width: 560px;
+}
+.bsp-section-kicker {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--bsp-lime);
+  margin-bottom: 8px;
+}
+.bsp-varieties-title {
+  font-size: 38px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.8px !important;
+  color: #FFFFFF !important;
+  margin: 0 !important;
+}
+.bsp-varieties-subtitle {
+  font-size: 15.5px !important;
+  color: var(--bsp-dark-text-muted) !important;
+  line-height: 1.6 !important;
+  max-width: 480px;
+  margin: 0 !important;
+}
+.bsp-varieties-header-unified {
+  max-width: 680px;
+  margin-bottom: 50px;
+}
+.bsp-varieties-cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+.bsp-ref-variety-card {
+  display: flex;
+  flex-direction: column;
+}
+.bsp-ref-card-img-wrap {
+  border-radius: 16px;
+  overflow: hidden;
+  height: 250px;
+  margin-bottom: 16px;
+  background: #05100B;
+}
+.bsp-ref-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.bsp-ref-variety-card:hover .bsp-ref-card-img-wrap img {
+  transform: scale(1.04);
+}
+.bsp-ref-card-title {
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  margin: 0 0 6px 0 !important;
+}
+.bsp-ref-card-desc {
+  font-size: 13.5px !important;
+  color: var(--bsp-dark-text-muted) !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+}
+
+/* ==========================================================================
+   SECTION 5: ACTIONABLE AGRONOMY FRAMEWORKS (CREATIVE ASYMMETRIC BENTO)
+   ========================================================================== */
+.bsp-dark-guides-section {
+  background: var(--bsp-dark-bg);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 95px 24px 120px 24px;
+  color: #FFFFFF;
+}
+.bsp-guides-wrap {
+  max-width: var(--bsp-container-max);
+  margin: 0 auto;
+}
+.bsp-guides-title-center {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 60px auto;
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+  letter-spacing: -0.6px !important;
+  color: #FFFFFF !important;
+}
+
+/* Dynamic Asymmetric Bento Layout */
+.bsp-guides-bento-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Main Feature Card (Left Column) */
+.bsp-bento-feature-card {
+  background: var(--bsp-dark-card);
+  border: 1px solid var(--bsp-dark-border);
+  border-radius: var(--bsp-radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+.bsp-bento-feature-card:hover {
+  border-color: rgba(212, 246, 126, 0.35);
+  transform: translateY(-4px);
+}
+.bsp-bento-feature-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+  background: #05100B;
+}
+.bsp-bento-feature-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.bsp-bento-feature-card:hover .bsp-bento-feature-img-wrap img {
+  transform: scale(1.04);
+}
+.bsp-bento-badge-overlay {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: rgba(8, 28, 19, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--bsp-lime);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: var(--bsp-radius-pill);
+}
+.bsp-bento-feature-content {
+  padding: 26px 28px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bsp-bento-feature-content h3 {
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: #FFFFFF !important;
+  margin: 0 0 10px 0 !important;
+  line-height: 1.3 !important;
+}
+.bsp-bento-feature-content p {
+  font-size: 14.5px !important;
+  color: var(--bsp-dark-text-muted) !important;
+  line-height: 1.6 !important;
+  margin: 0 0 20px 0 !important;
+}
+.bsp-bento-cta-btn {
+  background: var(--bsp-lime);
+  color: #0A1F13 !important;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 9px 20px;
+  border-radius: var(--bsp-radius-pill);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  transition: all 0.15s ease;
+}
+.bsp-bento-cta-btn:hover {
+  background: var(--bsp-lime-hover);
+  transform: translateY(-2px);
+}
+
+/* Stacked Side Cards (Right Column) */
+.bsp-bento-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  justify-content: space-between;
+}
+.bsp-bento-subcard {
+  background: var(--bsp-dark-card);
+  border: 1px solid var(--bsp-dark-border);
+  border-radius: var(--bsp-radius-lg);
+  padding: 18px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex: 1;
+  transition: all 0.3s ease;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+.bsp-bento-subcard:hover {
+  border-color: rgba(212, 246, 126, 0.3);
+  transform: translateY(-3px);
+}
+.bsp-bento-subthumb {
+  width: 140px;
+  height: 140px;
+  border-radius: 14px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #05100B;
+}
+.bsp-bento-subthumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.bsp-bento-subcard:hover .bsp-bento-subthumb img {
+  transform: scale(1.05);
+}
+.bsp-bento-subbody {
+  flex: 1;
+}
+.bsp-bento-subtag {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--bsp-lime);
+  margin-bottom: 4px;
+  display: block;
+}
+.bsp-bento-subbody h4 {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+.bsp-bento-subbody p {
+  font-size: 13.5px !important;
+  color: var(--bsp-dark-text-muted) !important;
+  line-height: 1.5 !important;
+  margin: 0 0 10px 0 !important;
+}
+.bsp-bento-sublink {
+  color: var(--bsp-lime);
+  font-size: 13.5px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+.bsp-bento-sublink:hover {
+  color: var(--bsp-lime-hover);
+  gap: 9px;
+}
+
+/* ==========================================================================
+   SECTION 6: CLEAN WHITE FOOTER (WATERMARK REMOVED)
+   ========================================================================== */
+.bsp-white-footer {
+  background: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 24px 40px 24px;
+  border-top: 1px solid #E2E8F0;
+}
+.bsp-footer-container {
+  max-width: var(--bsp-container-max);
+  margin: 0 auto;
+}
+.bsp-footer-5cols {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1.3fr;
+  gap: 36px;
+  margin-bottom: 50px;
+}
+.bsp-footer-brand-p {
+  font-size: 14px;
+  color: var(--bsp-slate-muted);
+  line-height: 1.6;
+  margin: 16px 0 20px 0;
+  max-width: 320px;
+}
+.bsp-footer-contact-btn {
+  background: #0F172A;
+  color: #FFFFFF !important;
+  padding: 9px 20px;
+  border-radius: var(--bsp-radius-pill);
+  font-size: 13.5px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s ease;
+}
+.bsp-footer-contact-btn:hover {
+  background: var(--bsp-dark-forest);
+}
+.bsp-col-title {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--bsp-slate-heading);
+  margin: 0 0 16px 0;
+}
+.bsp-footer-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bsp-footer-ul a {
+  color: var(--bsp-slate-body);
+  text-decoration: none;
+  font-size: 13.5px;
+  transition: color 0.15s ease;
+}
+.bsp-footer-ul a:hover {
+  color: var(--bsp-emerald);
+}
+.bsp-contact-lines {
+  font-size: 13.5px;
+  color: var(--bsp-slate-body);
+  line-height: 1.6;
+}
+
+.bsp-footer-copyright-row {
+  border-top: 1px solid #E2E8F0;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: var(--bsp-slate-muted);
+}
+.bsp-footer-copyright-row a {
+  color: var(--bsp-slate-muted);
+  text-decoration: none;
+  margin-left: 20px;
+}
+.bsp-footer-copyright-row a:hover {
+  color: var(--bsp-slate-heading);
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .bsp-proof-grid { grid-template-columns: 1fr; }
+  .bsp-proof-photo-card img { height: 380px; }
+  .bsp-varieties-cards-row { grid-template-columns: 1fr; gap: 28px; }
+  .bsp-guides-bento-layout { grid-template-columns: 1fr; gap: 28px; }
+  .bsp-footer-5cols { grid-template-columns: 1fr 1fr; gap: 28px; }
+}
+
+@media (max-width: 768px) {
+  .bsp-nav-links { display: none; }
+  .bsp-hero-wrapper { min-height: 85vh; padding: 20px 16px 50px 16px; }
+  .bsp-hero-title { font-size: 30px !important; }
+  .bsp-proof-top-row { flex-direction: column; gap: 14px; }
+  .bsp-varieties-top-header { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .bsp-showcase-card-banner { flex-direction: column; align-items: flex-start; gap: 28px; padding: 32px 20px; }
+  .bsp-bento-subcard { flex-direction: column; align-items: flex-start; }
+  .bsp-bento-subthumb { width: 100%; height: 180px; }
+  .bsp-footer-5cols { grid-template-columns: 1fr; gap: 24px; }
+  .bsp-footer-copyright-row { flex-direction: column; gap: 10px; text-align: center; }
+}
