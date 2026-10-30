@@ -4,6 +4,8 @@
 
 A corporate landing page designed for PT Borneo Sawit Perkasa, an integrated sustainable palm oil and agro-industrial enterprise operating in Kalimantan, Indonesia. The web application features a modern eco-agronomic design language, asymmetric bento grids, glassmorphism interface components, and full static performance optimization.
 
+**Live Deployment:** [https://wp-barito-sawit.pages.dev/](https://wp-barito-sawit.pages.dev/)
+
 ---
 
 ## Architecture & Development Workflow
@@ -117,13 +119,17 @@ Once running, navigate to `http://localhost:8080` in your browser.
 
 ## Production Deployment
 
+### Cloudflare Pages (Active Deployment)
+- **Production URL:** [https://wp-barito-sawit.pages.dev/](https://wp-barito-sawit.pages.dev/)
+- **Build Settings:** Framework preset `None`, build command empty, output directory `/`. Continuous deployment is active via the `main` branch.
+
 ### GitHub Pages
 1. Push the contents of this folder directly to your GitHub repository (e.g., `main` branch).
 2. Go to repository **Settings** > **Pages**.
 3. Under **Build and deployment**, select **Source** as `Deploy from a branch`.
 4. Choose the `main` branch and root (`/`) folder, then click **Save**.
 
-### Cloudflare Pages / Vercel / Netlify
+### Vercel / Netlify
 1. Connect your repository to the hosting platform.
 2. Set the build command to empty (no build step required).
 3. Set the output directory to root (`.`).
